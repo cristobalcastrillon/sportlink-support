@@ -3,40 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soporte SportLink</title>
-    
+    <title>SportLink - Centro de Soporte</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
-    <div class="max-w-4xl mx-auto p-6">
-        <header class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-gray-800">SportLink</h1>
-            <p class="text-xl text-gray-600">Centro de Soporte</p>
+    <!-- Navegación -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <span class="font-semibold text-gray-800 text-lg">SportLink</span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-green-500 transition duration-300">Soporte</a>
+                        <a href="privacy.html" class="py-4 px-2 text-gray-500 hover:text-green-500 transition duration-300">Privacidad</a>
+                        <a href="terms.html" class="py-4 px-2 text-gray-500 hover:text-green-500 transition duration-300">Términos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-4xl mx-auto p-6">
+        <!-- Hero Section -->
+        <header class="text-center mb-12 py-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Bienvenido al Centro de Soporte</h1>
+            <p class="text-xl text-gray-600">Encuentra respuestas a tus preguntas sobre SportLink</p>
         </header>
 
-        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Contacto</h2>
-            <p class="mb-4">Email: soporte@sportlink.app</p>
-            <p>Horario de atención: Lunes a Viernes, 9:00 AM - 6:00 PM (GMT-5)</p>
+        <!-- Secciones de Soporte -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4">Contacto</h2>
+                <div class="space-y-4">
+                    <p><strong>Email:</strong> soporte@sportlink.app</p>
+                    <p><strong>Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM (GMT-5)</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4">Enlaces Rápidos</h2>
+                <ul class="space-y-2">
+                    <li><a href="privacy.html" class="text-green-600 hover:text-green-800">Política de Privacidad</a></li>
+                    <li><a href="terms.html" class="text-green-600 hover:text-green-800">Términos de Servicio</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Preguntas Frecuentes</h2>
-            <ul class="space-y-4">
-                <li>
-                    <h3 class="font-semibold">¿Cómo creo un partido?</h3>
-                    <p class="text-gray-600">Para crear un partido, presiona el botón "+" en la pantalla principal y sigue las instrucciones.</p>
-                </li>
-                <li>
-                    <h3 class="font-semibold">¿Cómo invito jugadores?</h3>
-                    <p class="text-gray-600">Puedes invitar jugadores directamente desde la app usando el botón de invitación en la pantalla del partido.</p>
-                </li>
-                <li>
-                    <h3 class="font-semibold">¿Cómo me uno a un partido?</h3>
-                    <p class="text-gray-600">Puedes unirte a partidos disponibles desde la lista de partidos abiertos o aceptando una invitación.</p>
-                </li>
-            </ul>
+        <!-- FAQs -->
+        <div class="mt-12 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-6">Preguntas Frecuentes</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-semibold text-lg mb-2">¿Cómo creo un partido?</h3>
+                    <p class="text-gray-600">Para crear un partido, presiona el botón "+" en la pantalla principal y sigue los pasos para configurar el tipo de partido, fecha y hora.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2">¿Cómo invito jugadores?</h3>
+                    <p class="text-gray-600">Dentro de un partido, puedes invitar jugadores usando el botón de invitación. Puedes invitar a tus contactos o buscar jugadores en la app.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2">¿Cómo me uno a un partido?</h3>
+                    <p class="text-gray-600">Puedes unirte a partidos desde la lista de partidos abiertos o aceptando invitaciones que recibas de otros jugadores.</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12 py-6">
+        <div class="max-w-4xl mx-auto px-4 text-center text-gray-600">
+            <p>&copy; 2024 SportLink. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
